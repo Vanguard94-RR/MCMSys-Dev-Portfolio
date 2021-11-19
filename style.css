@@ -45,14 +45,22 @@ p {
 .section-title span {
   color: crimson;
 }
+.section-title2 span {
+  color: crimson;
+}
 
 .section-title span2 {
   color: white;
 }
-.button1{
-color: white; 
-transition: 0.3s ease background-color;
-transition-property: background-color, color;
+.button1 {
+  color: white;
+}
+.button1:hover {
+  color: crimson;
+  background-color:transparent;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out background-color;
+  transition-property: background-color, color;
 }
 .cta {
   display: inline-block;

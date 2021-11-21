@@ -1,0 +1,96 @@
+/* Header Section*/
+.header h1 {
+  color:white;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+
+p1{
+  color:white;
+  font-size: 1.4rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  text-align: justify;
+}
+/*Body Section*/
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.p2 img{
+    width: auto;
+    height: auto;
+    align-items: center;
+}
+.p1 button{
+color: white;
+}
+
+
+body {
+  background: linear-gradient(180deg, #29323c 0%, #485563 100%);
+}
+
+/*Footer Section*/
+#footer {
+box-sizing: content-box;
+background-color:transparent;
+align-items: center;
+text-align: center;
+}
+
+#footer .footer {
+  min-height: 250px;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#footer h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  padding-top: 5px;
+  flex-direction: column;
+}
+#footer h2 {
+  color: white;
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  padding-top: 5px;
+  flex-direction: column;
+  -ms-flex-align: center;
+}
+#footer .social-icon {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  align-content: center;
+
+}
+#footer .social-item {
+  height: 50px;
+  width: 50px;
+  margin: 0 5px;
+}
+#footer .social-item img {
+  filter: grayscale(1);
+  transition: 0.3s ease filter;
+}
+
+#footer .social-item:hover img {
+  filter: grayscale(0);
+}
+#footer p {
+  margin-top: 5px;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+}

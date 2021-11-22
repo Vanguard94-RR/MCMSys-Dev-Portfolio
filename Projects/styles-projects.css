@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
 /* Header section */
 #header {
   position: fixed;
@@ -155,6 +167,7 @@ span {
     margin-left: 20vh;    
 }
 p1 {
+    max-width: 75%;
   color: white;
   font-size: 1.4rem;
   margin-top: 15vh;
@@ -168,26 +181,28 @@ p1 {
 }
 h2{
       color: white;
-  font-size: 5.5rem;
+  font-size: 7rem;
+  font-weight: bold;
   margin-top: 15vh;
   margin-bottom: 3vh;
   position: relative;
   padding: 1px;
   line-height: 1rem;
-  font-weight: 350;
+
   letter-spacing: 0.2rem;
   text-align: center;
 
 }
 ul {
+  max-width: 90%;
   color: white;
-  font-size: 1.4rem;
+  font-size: 2.5rem;
   margin-top: 10vh;
   margin-bottom: 10vh;
   position: relative;
   padding-top: 5px;
   line-height: 2.5rem;
-  font-weight: 300;
+  font-weight: 600rem;
   letter-spacing: 0.1rem;
   text-align: justify;
   columns: 3;
@@ -197,7 +212,7 @@ ul {
 }
 
 body {
-  background: linear-gradient(180deg, #29323c 0%, #485563 100%);
+  background: linear-gradient(180deg, #485563 0%,  #29323c 100%);
 }
 .container a {
   text-decoration: none;

@@ -1,0 +1,20 @@
+total 68
+drwxr-xr-x 2 manu1331 manu1331 4096 Sep 13 21:25 .
+drwxr-xr-x 4 manu1331 manu1331 4096 Sep 13 19:29 ..
+-rwxr-xr-x 1 manu1331 manu1331   75 Sep 13 19:30 HelloScript.sh
+-rwxr-xr-x 1 manu1331 manu1331  292 Sep 13 20:14 case_conditional.sh
+-rwxr-xr-x 1 manu1331 manu1331  183 Sep 13 21:23 compare_strings.sh
+-rwxr-xr-x 1 manu1331 manu1331  253 Sep 13 21:30 compare_strings_lenght.sh
+-rwxr-xr-x 1 manu1331 manu1331    0 Sep 17 16:32 file1.txt
+-rwxr-xr-x 1 manu1331 manu1331    0 Sep 17 16:32 file2.txt
+-rwxr-xr-x 1 manu1331 manu1331  168 Sep 13 20:32 for_loop.sh
+-rwxr-xr-x 1 manu1331 manu1331  283 Sep 13 19:56 if_conditional_1.sh
+-rwxr-xr-x 1 manu1331 manu1331  253 Sep 13 20:04 if_conditional_and_2.sh
+-rwxr-xr-x 1 manu1331 manu1331  250 Sep 13 20:11 if_conditional_or_2.sh
+-rwxr-xr-x 1 manu1331 manu1331   76 Sep 13 20:52 read_lines_in_file.sh
+-rwxr-xr-x 1 manu1331 manu1331  318 Sep 13 20:47 script_input.sh
+-rwxr-xr-x 1 manu1331 manu1331   63 Sep 13 21:11 secondScript.sh
+-rwxr-xr-x 1 manu1331 manu1331   72 Sep 13 21:11 send_output_to_other_file.sh
+-rwxr-xr-x 1 manu1331 manu1331   74 Sep 17 16:32 standard_output.sh
+-rwxr-xr-x 1 manu1331 manu1331  102 Sep 13 20:19 until_loop.sh
+-rwxr-xr-x 1 manu1331 manu1331  102 Sep 13 20:17 while_loop.sh

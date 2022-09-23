@@ -51,7 +51,7 @@ html {
   transition: 0.5s ease left;
 }
 #header .nav-list ul.active {
-  left: 0%;
+  left: 5%;
 }
 #header .nav-list ul a {
   font-size: 2.5rem;
@@ -179,6 +179,43 @@ p1{
   letter-spacing: 0.1rem;
   text-align: justify;
 }
+p6{
+  max-width: 80%;
+  color: white;
+  font-size: 2.5rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+p7 {
+  max-width: 80%;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+objeto {
+  max-width: 75%;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: .5vh;
+  margin-bottom: 5vh;
+  position: relative;
+  padding-top: 0px;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  text-align: justify;
+}
 h2{
       color: white;
   font-size: 7rem;
@@ -190,7 +227,6 @@ h2{
   line-height: 7rem;
   letter-spacing: 0.2rem;
   text-align: center;
-
 }
 h1 {
   color: white;
@@ -206,7 +242,7 @@ h1 {
 
 }
 ul {
-  max-width: 90%;
+  max-width: 85%;
   color: white;
   font-size: 2.5rem;
   margin-top: 10vh;
@@ -215,12 +251,12 @@ ul {
   padding-top: 5px;
   line-height: 2.5rem;
   font-weight: 600rem;
-  letter-spacing: 0.1rem;
-  text-align: justify;
-  columns: 3;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  columns: 1;
   column-gap: 15vh;
-  -webkit-columns: 3;
-  -moz-columns: 3;
+  /* -webkit-columns: 2;
+  -moz-columns: 2; */
 }
 
 body {

@@ -510,13 +510,16 @@ p {
 /* End Projects section */
 
 /*About Section*/
+#about {
+  background-color: var(--color-dark);
+  border-top: 1px solid var(--color-border);
+}
 #about .about {
   flex-direction: column-reverse;
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
-  margin-bottom: 10px;
-  padding: 10px 20px;
+  padding: 120px 20px 80px;
 }
 #about .col-left {
   width: 250px;
@@ -528,32 +531,34 @@ p {
 #about .col-right h2 {
   font-size: 1.8rem;
   font-weight: 500;
-  letter-spacing: 0.2rem;
+  font-family: var(--font-mono);
+  letter-spacing: 0.1rem;
   margin-bottom: 10px;
+  color: white;
 }
 #about .col-right p {
+  color: #aaa;
   margin-bottom: 20px;
 }
 #about .cta {
-  color: black;
   margin-bottom: 50px;
   padding: 10px 20px;
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 #about .col-left .about-img {
   height: 100%;
   width: 100%;
   position: relative;
-  border: 10px solid white;
+  border: 2px solid var(--color-border);
 }
 #about .col-left .about-img::after {
   content: "";
   position: absolute;
-  left: -33px;
-  top: 19px;
-  height: 98%;
-  width: 98%;
-  border: 7px solid crimson;
+  left: -20px;
+  top: 20px;
+  height: 100%;
+  width: 100%;
+  border: 2px solid var(--color-cyan);
   z-index: -1;
 }
 
@@ -567,24 +572,28 @@ p {
 #about .stat-card {
   display: flex;
   flex-direction: column;
-  padding: 12px 20px;
-  border-radius: 6px;
+  padding: 14px 22px;
   border-left: 3px solid;
-  background: rgba(255,255,255,0.04);
-  min-width: 100px;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-border);
+  min-width: 110px;
 }
 #about .stat-card.stat-cyan   { border-left-color: var(--color-cyan); }
 #about .stat-card.stat-orange { border-left-color: var(--color-orange); }
 #about .stat-card.stat-red    { border-left-color: var(--color-red); }
 #about .stat-number {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 700;
+  font-family: var(--font-mono);
   color: white;
   line-height: 1;
 }
 #about .stat-label {
-  font-size: 1.1rem;
-  color: #888;
+  font-size: 1rem;
+  font-family: var(--font-mono);
+  color: var(--color-muted);
   margin-top: 4px;
 }
 /*End About Section*/

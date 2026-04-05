@@ -287,7 +287,8 @@ p {
 /*End Hero Section*/
 /* Skills Section */
 #skills {
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background-color: var(--color-dark);
+  border-top: 1px solid var(--color-border);
 }
 #skills .skills-wrapper {
   display: flex;
@@ -297,31 +298,35 @@ p {
   min-height: 100vh;
   width: 100%;
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px 80px;
 }
 #skills .skills-header {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 #skills .section-title {
   color: white;
+}
+#skills .section-title span {
+  color: var(--color-cyan);
 }
 #skills .skills-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
   max-width: 900px;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 80px auto;
 }
 #skills .skill-category {
   min-width: 200px;
   text-align: left;
 }
 #skills .skill-category-title {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-family: var(--font-mono);
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  margin-bottom: 12px;
+  letter-spacing: 0.12rem;
+  margin-bottom: 14px;
 }
 #skills .skill-tags {
   display: flex;
@@ -329,9 +334,10 @@ p {
   gap: 8px;
 }
 #skills .skill-tag {
-  padding: 5px 14px;
-  border-radius: 4px;
-  font-size: 1.2rem;
+  padding: 4px 12px;
+  border-radius: 2px;
+  font-size: 1.1rem;
+  font-family: var(--font-mono);
   font-weight: 400;
   border: 1px solid;
 }
@@ -342,10 +348,11 @@ p {
 
 /* Certifications */
 #skills .cert-header {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 #skills .cert-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-family: var(--font-mono);
   font-weight: 500;
   color: white;
   text-transform: uppercase;
@@ -361,34 +368,40 @@ p {
   display: flex;
   align-items: center;
   gap: 16px;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid;
-  border-radius: 8px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
   padding: 18px 24px;
   min-width: 260px;
   text-align: left;
+  transition: border-color 0.2s ease;
 }
-#skills .cert-card.gcp           { border-color: var(--color-orange); }
-#skills .cert-card.security-cert { border-color: var(--color-red); }
+#skills .cert-card:hover {
+  border-color: var(--color-cyan);
+}
+#skills .cert-card.gcp           { border-left: 3px solid var(--color-orange); }
+#skills .cert-card.security-cert { border-left: 3px solid var(--color-red); }
 #skills .cert-icon {
   font-size: 2.8rem;
   line-height: 1;
 }
 #skills .cert-info h3 {
   font-size: 1.4rem;
+  font-family: var(--font-mono);
   font-weight: 600;
   color: white;
   margin-bottom: 4px;
 }
 #skills .cert-info p {
-  color: #aaa;
+  color: var(--color-muted);
   font-size: 1.2rem;
   margin: 0;
   line-height: 1.6rem;
 }
 #skills .cert-issuer {
   font-size: 1rem;
-  color: #666;
+  font-family: var(--font-mono);
+  color: #555;
   margin-top: 4px;
   display: block;
 }

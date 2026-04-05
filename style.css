@@ -293,9 +293,12 @@ p {
 
 /*End  Hero Section*/
 /* Skills Section */
-#skills .skills {
+#skills {
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+#skills .skills {
   flex-direction: column;
+  justify-content: flex-start;
   text-align: center;
   padding: 100px 20px;
 }

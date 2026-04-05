@@ -1,0 +1,94 @@
+<h2>Design — Section 3: Tech Stack + Certifications</h2>
+<p class="subtitle">Two new sections to add after the Hero. Choose the layout you prefer.</p>
+
+<div class="section">
+  <h3>Tech Stack — Layout Options</h3>
+  <div class="cards">
+
+    <div class="card" data-choice="stack-a" onclick="toggleSelect(this)">
+      <div class="card-image" style="background:#111;padding:1rem;border-radius:4px">
+        <div style="color:#aaa;font-size:0.7rem;text-transform:uppercase;margin-bottom:0.8rem;letter-spacing:1px">Tech Stack</div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.5rem">
+          <div style="background:#1a1a2e;padding:0.5rem;border-radius:4px;text-align:center;font-size:0.65rem;color:#64ffda">Kubernetes</div>
+          <div style="background:#1a1a2e;padding:0.5rem;border-radius:4px;text-align:center;font-size:0.65rem;color:#64ffda">Terraform</div>
+          <div style="background:#1a1a2e;padding:0.5rem;border-radius:4px;text-align:center;font-size:0.65rem;color:#64ffda">Ansible</div>
+          <div style="background:#1a1a2e;padding:0.5rem;border-radius:4px;text-align:center;font-size:0.65rem;color:#64ffda">GCP</div>
+          <div style="background:#1a1a2e;padding:0.5rem;border-radius:4px;text-align:center;font-size:0.65rem;color:#f0a500">AWS</div>
+          <div style="background:#1a1a2e;padding:0.5rem;border-radius:4px;text-align:center;font-size:0.65rem;color:#f0a500">Azure</div>
+          <div style="background:#1a1a2e;padding:0.5rem;border-radius:4px;text-align:center;font-size:0.65rem;color:#f0a500">Go</div>
+          <div style="background:#1a1a2e;padding:0.5rem;border-radius:4px;text-align:center;font-size:0.65rem;color:#f0a500">Python</div>
+          <div style="background:#1a1a2e;padding:0.5rem;border-radius:4px;text-align:center;font-size:0.65rem;color:#e94560">Linux</div>
+          <div style="background:#1a1a2e;padding:0.5rem;border-radius:4px;text-align:center;font-size:0.65rem;color:#e94560">Bash</div>
+          <div style="background:#1a1a2e;padding:0.5rem;border-radius:4px;text-align:center;font-size:0.65rem;color:#e94560">CyberArk</div>
+          <div style="background:#1a1a2e;padding:0.5rem;border-radius:4px;text-align:center;font-size:0.65rem;color:#e94560">IAM</div>
+        </div>
+        <div style="margin-top:0.5rem;font-size:0.6rem;color:#555;text-align:center">Cyan=Infra · Orange=Cloud/Dev · Red=Security</div>
+      </div>
+      <div class="card-body">
+        <h3>A — Grid by Category</h3>
+        <p>Grid compacto con color por categoría: Infraestructura, Cloud/Dev, Security. Fácil de leer de un vistazo.</p>
+      </div>
+    </div>
+
+    <div class="card" data-choice="stack-b" onclick="toggleSelect(this)">
+      <div class="card-image" style="background:#111;padding:1rem;border-radius:4px">
+        <div style="color:#aaa;font-size:0.7rem;text-transform:uppercase;margin-bottom:0.8rem;letter-spacing:1px">Tech Stack</div>
+        <div style="margin-bottom:0.6rem">
+          <div style="color:#64ffda;font-size:0.65rem;margin-bottom:0.3rem">Infrastructure & Orchestration</div>
+          <div style="display:flex;gap:0.4rem;flex-wrap:wrap">
+            <span style="border:1px solid #64ffda;color:#64ffda;padding:0.15rem 0.5rem;border-radius:3px;font-size:0.62rem">Kubernetes</span>
+            <span style="border:1px solid #64ffda;color:#64ffda;padding:0.15rem 0.5rem;border-radius:3px;font-size:0.62rem">Terraform</span>
+            <span style="border:1px solid #64ffda;color:#64ffda;padding:0.15rem 0.5rem;border-radius:3px;font-size:0.62rem">Ansible</span>
+            <span style="border:1px solid #64ffda;color:#64ffda;padding:0.15rem 0.5rem;border-radius:3px;font-size:0.62rem">Helm</span>
+          </div>
+        </div>
+        <div style="margin-bottom:0.6rem">
+          <div style="color:#f0a500;font-size:0.65rem;margin-bottom:0.3rem">Cloud Platforms</div>
+          <div style="display:flex;gap:0.4rem;flex-wrap:wrap">
+            <span style="border:1px solid #f0a500;color:#f0a500;padding:0.15rem 0.5rem;border-radius:3px;font-size:0.62rem">GCP</span>
+            <span style="border:1px solid #f0a500;color:#f0a500;padding:0.15rem 0.5rem;border-radius:3px;font-size:0.62rem">AWS</span>
+            <span style="border:1px solid #f0a500;color:#f0a500;padding:0.15rem 0.5rem;border-radius:3px;font-size:0.62rem">Azure</span>
+          </div>
+        </div>
+        <div>
+          <div style="color:#e94560;font-size:0.65rem;margin-bottom:0.3rem">Security & Identity</div>
+          <div style="display:flex;gap:0.4rem;flex-wrap:wrap">
+            <span style="border:1px solid #e94560;color:#e94560;padding:0.15rem 0.5rem;border-radius:3px;font-size:0.62rem">CyberArk</span>
+            <span style="border:1px solid #e94560;color:#e94560;padding:0.15rem 0.5rem;border-radius:3px;font-size:0.62rem">IAM</span>
+            <span style="border:1px solid #e94560;color:#e94560;padding:0.15rem 0.5rem;border-radius:3px;font-size:0.62rem">Security+</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <h3>B — Grouped by Category</h3>
+        <p>Categorías explícitas con etiquetas de borde. Muestra mejor tu especialización en cada área.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" style="margin-top:1.5rem">
+  <h3>Certifications — Preview (fija, sin opciones)</h3>
+  <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:0.5rem">
+    <div style="background:#1a1a2e;border:1px solid #f0a500;border-radius:6px;padding:0.8rem 1.2rem;display:flex;align-items:center;gap:0.7rem">
+      <div style="font-size:1.5rem">☁️</div>
+      <div>
+        <div style="color:#f0a500;font-size:0.8rem;font-weight:bold">Google Cloud Professional</div>
+        <div style="color:#aaa;font-size:0.7rem">Cloud Architect</div>
+        <div style="color:#555;font-size:0.65rem">Google · Verified</div>
+      </div>
+    </div>
+    <div style="background:#1a1a2e;border:1px solid #e94560;border-radius:6px;padding:0.8rem 1.2rem;display:flex;align-items:center;gap:0.7rem">
+      <div style="font-size:1.5rem">🔒</div>
+      <div>
+        <div style="color:#e94560;font-size:0.8rem;font-weight:bold">CompTIA Security+</div>
+        <div style="color:#aaa;font-size:0.7rem">Cybersecurity Fundamentals</div>
+        <div style="color:#555;font-size:0.65rem">CompTIA · Verified</div>
+      </div>
+    </div>
+  </div>
+  <div style="color:#555;font-size:0.7rem;margin-top:0.5rem">Los badges de certificación son fijos — no hay variante.</div>
+</div>
+
+<p class="subtitle" style="margin-top:1rem">¿Tech Stack A o B? Confirma en el terminal.</p>

@@ -1,0 +1,73 @@
+<h2>Design — Section 4: Projects</h2>
+<p class="subtitle">Replacing Lorem ipsum and empty cards with 5 real projects from your GitHub.</p>
+
+<div class="section">
+  <h3>Projects to Feature (from GitHub)</h3>
+  <div style="font-size:0.8rem;color:#aaa;line-height:2;background:rgba(255,255,255,0.03);padding:1rem;border-radius:6px;font-family:monospace">
+    <div><span style="color:#64ffda">1.</span> <span style="color:#fff">IaC-Programming-Samples</span> <span style="color:#555">· Shell · 2026</span> — Infrastructure as Code samples</div>
+    <div><span style="color:#64ffda">2.</span> <span style="color:#fff">lambda-promtail</span> <span style="color:#555">· Go · 2025</span> — AWS logs via Lambda → Loki (observability)</div>
+    <div><span style="color:#64ffda">3.</span> <span style="color:#fff">K8s-and-Helm-Training</span> <span style="color:#555">· Helm · 2023</span> — Kubernetes + Helm orchestration</div>
+    <div><span style="color:#64ffda">4.</span> <span style="color:#fff">Ansible</span> <span style="color:#555">· Dockerfile · 2023</span> — Ansible automation + containers</div>
+    <div><span style="color:#64ffda">5.</span> <span style="color:#fff">Python Web Scraper</span> <span style="color:#555">· Python · Commercial</span> — Gov data → Excel (existing project)</div>
+  </div>
+  <p style="color:#e94560;font-size:0.75rem;margin-top:0.5rem">⚠ Necesitamos que agregues descripciones reales a cada repo en GitHub (README o description). Se puede hacer en paralelo.</p>
+</div>
+
+<div class="section" style="margin-top:1.5rem">
+  <h3>Project Card Layout</h3>
+  <div class="cards">
+
+    <div class="card" data-choice="proj-a" onclick="toggleSelect(this)">
+      <div class="card-image" style="background:#111;padding:1rem;border-radius:4px">
+        <div style="background:#1a1a2e;border-radius:6px;padding:1rem;margin-bottom:0.5rem">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.5rem">
+            <div style="color:#fff;font-size:0.85rem;font-weight:bold">lambda-promtail</div>
+            <div style="display:flex;gap:0.3rem">
+              <span style="background:rgba(100,255,218,0.1);color:#64ffda;padding:0.1rem 0.4rem;border-radius:3px;font-size:0.6rem">Go</span>
+              <span style="background:rgba(100,255,218,0.1);color:#64ffda;padding:0.1rem 0.4rem;border-radius:3px;font-size:0.6rem">AWS</span>
+              <span style="background:rgba(100,255,218,0.1);color:#64ffda;padding:0.1rem 0.4rem;border-radius:3px;font-size:0.6rem">SRE</span>
+            </div>
+          </div>
+          <div style="color:#888;font-size:0.72rem;line-height:1.5">Forwards AWS CloudWatch logs to Loki via Lambda. Enables centralized observability for multi-account environments.</div>
+          <div style="display:flex;gap:0.6rem;margin-top:0.7rem">
+            <span style="color:#64ffda;font-size:0.68rem">→ GitHub</span>
+            <span style="color:#555;font-size:0.68rem">2025</span>
+          </div>
+        </div>
+        <div style="color:#555;font-size:0.65rem;text-align:center">× 5 cards in this style</div>
+      </div>
+      <div class="card-body">
+        <h3>A — Horizontal card</h3>
+        <p>Tarjeta compacta: título + tech tags arriba, descripción, link a GitHub abajo. Similar al layout actual pero con contenido real.</p>
+      </div>
+    </div>
+
+    <div class="card" data-choice="proj-b" onclick="toggleSelect(this)">
+      <div class="card-image" style="background:#111;padding:1rem;border-radius:4px">
+        <div style="background:#1a1a2e;border-radius:6px;overflow:hidden;margin-bottom:0.5rem">
+          <div style="background:linear-gradient(135deg,#0d2137,#1a1a2e);padding:1.2rem 1rem;border-bottom:2px solid #64ffda">
+            <div style="color:#64ffda;font-size:0.65rem;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.3rem">SRE · Observability</div>
+            <div style="color:#fff;font-size:0.9rem;font-weight:bold">lambda-promtail</div>
+          </div>
+          <div style="padding:0.8rem 1rem">
+            <div style="color:#888;font-size:0.7rem;line-height:1.5">Forwards AWS CloudWatch logs to Loki via Lambda for centralized observability.</div>
+            <div style="display:flex;gap:0.4rem;margin-top:0.6rem;flex-wrap:wrap">
+              <span style="background:rgba(100,255,218,0.1);color:#64ffda;padding:0.1rem 0.4rem;border-radius:3px;font-size:0.6rem">Go</span>
+              <span style="background:rgba(100,255,218,0.1);color:#64ffda;padding:0.1rem 0.4rem;border-radius:3px;font-size:0.6rem">AWS Lambda</span>
+              <span style="background:rgba(100,255,218,0.1);color:#64ffda;padding:0.1rem 0.4rem;border-radius:3px;font-size:0.6rem">Loki</span>
+            </div>
+            <div style="margin-top:0.6rem;color:#64ffda;font-size:0.68rem">→ View on GitHub</div>
+          </div>
+        </div>
+        <div style="color:#555;font-size:0.65rem;text-align:center">× 5 cards in this style</div>
+      </div>
+      <div class="card-body">
+        <h3>B — Accent card</h3>
+        <p>Cabecera con categoría + acento de color. Más visual, cada proyecto tiene su identidad. Mejor para impresionar a primera vista.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<p class="subtitle" style="margin-top:1rem">¿Project card A o B? Confirma en el terminal.</p>

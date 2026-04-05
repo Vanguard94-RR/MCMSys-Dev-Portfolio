@@ -550,6 +550,12 @@ p {
   width: 100%;
   position: relative;
   border: 2px solid var(--color-border);
+  overflow: hidden;
+  background-color: var(--color-surface);
+}
+#about .col-left .about-img img {
+  mix-blend-mode: multiply;
+  filter: grayscale(0.15) contrast(1.05);
 }
 #about .col-left .about-img::after {
   content: "";

@@ -558,6 +558,36 @@ p {
   z-index: -1;
 }
 
+/* Stat cards */
+#about .stat-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+}
+#about .stat-card {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 20px;
+  border-radius: 6px;
+  border-left: 3px solid;
+  background: rgba(255,255,255,0.04);
+  min-width: 100px;
+}
+#about .stat-card.stat-cyan   { border-left-color: var(--color-cyan); }
+#about .stat-card.stat-orange { border-left-color: var(--color-orange); }
+#about .stat-card.stat-red    { border-left-color: var(--color-red); }
+#about .stat-number {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: white;
+  line-height: 1;
+}
+#about .stat-label {
+  font-size: 1.1rem;
+  color: #888;
+  margin-top: 4px;
+}
 /*End About Section*/
 /* contact Section */
 contact .contact {

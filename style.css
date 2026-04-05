@@ -481,6 +481,33 @@ p {
 #projects .project-item:hover .project-img img {
   transform: scale(1.5);
 }
+/* Project accent card additions */
+#projects .project-accent-header {
+  margin-bottom: 10px;
+}
+#projects .project-category {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--color-cyan);
+  font-weight: 500;
+  border-top: 2px solid var(--color-cyan);
+  padding-top: 8px;
+  display: inline-block;
+}
+#projects .project-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+#projects .project-tech-tag {
+  font-size: 1.1rem;
+  color: var(--color-muted);
+  border: 1px solid #555;
+  padding: 3px 10px;
+  border-radius: 3px;
+}
 /* End Projects section */
 
 /*About Section*/

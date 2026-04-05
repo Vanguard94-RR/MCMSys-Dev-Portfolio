@@ -313,29 +313,29 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto 80px auto;
 }
 #skills .skill-category {
-  min-width: 200px;
+  min-width: 260px;
   text-align: left;
 }
 #skills .skill-category-title {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-family: var(--font-mono);
   text-transform: uppercase;
   letter-spacing: 0.12rem;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 #skills .skill-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
 }
 #skills .skill-tag {
-  padding: 4px 12px;
+  padding: 5px 16px;
   border-radius: 2px;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-family: var(--font-mono);
   font-weight: 400;
   border: 1px solid;

@@ -299,70 +299,107 @@ p {
 }
 
 /*End  Hero Section*/
-/*Service Section*/
-#services .services {
+/* Skills Section */
+#skills .skills {
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  position: relative;
-  z-index: 1;
   flex-direction: column;
   text-align: center;
-  max-width: auto /*1500px*/;
-  margin: 10px auto;
-  padding: 100px 0;
+  padding: 100px 20px;
 }
-#services .service-top {
-  max-width: 500px;
-  margin: 0 auto;
+#skills .skills-header {
+  margin-bottom: 40px;
 }
-#services .service-bottom {
+#skills .section-title {
+  color: white;
+}
+#skills .skills-grid {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
-  margin-top: 50px;
-}
-#services .service-item {
-  flex-basis: 80%;
-  display: flex;
-  align-items: flex-start;
   justify-content: center;
-  flex-direction: column;
-  padding: 30px;
-  border-radius: 10px;
-  background-image: url(./img/Img-1.jpg);
-  background-size: cover;
-  margin: 10px 5%;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto 60px auto;
 }
-#services .service-item::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(#29323c 0%, #485563 100%);
-  opacity: 0.6;
-  z-index: -1;
-}
-#services .service-bottom .icon {
-  height: 80px;
-  width: 80px;
-  margin-bottom: 20px;
-}
-#services .service-item h2 {
-  font-size: 2rem;
-  color: white;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-#services .service-item p {
-  color: white;
+#skills .skill-category {
+  min-width: 200px;
   text-align: left;
 }
-/*End Service Section*/
+#skills .skill-category-title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 12px;
+}
+#skills .skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+#skills .skill-tag {
+  padding: 5px 14px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border: 1px solid;
+}
+#skills .skill-tag.infra    { border-color: var(--color-cyan);   color: var(--color-cyan); }
+#skills .skill-tag.cloud    { border-color: var(--color-orange); color: var(--color-orange); }
+#skills .skill-tag.security { border-color: var(--color-red);    color: var(--color-red); }
+#skills .skill-tag.scripting{ border-color: var(--color-muted);  color: var(--color-muted); }
+
+/* Certifications */
+#skills .cert-header {
+  margin-bottom: 20px;
+}
+#skills .cert-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+#skills .cert-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+#skills .cert-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 18px 24px;
+  min-width: 260px;
+  text-align: left;
+}
+#skills .cert-card.gcp           { border-color: var(--color-orange); }
+#skills .cert-card.security-cert { border-color: var(--color-red); }
+#skills .cert-icon {
+  font-size: 2.8rem;
+  line-height: 1;
+}
+#skills .cert-info h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 4px;
+}
+#skills .cert-info p {
+  color: #aaa;
+  font-size: 1.2rem;
+  margin: 0;
+  line-height: 1.6rem;
+}
+#skills .cert-issuer {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 4px;
+  display: block;
+}
+/* End Skills Section */
 /* Projects section */
 #projects .projects {
   background-image: url(./img/ImgFront-.jpg);
@@ -651,11 +688,6 @@ contact .contact {
   }
   /* End Hero */
 
-  /* Services Section */
-  #services .service-bottom .service-item {
-    flex-basis: 45%;
-    margin: 2.5%;
-  }
   /* Project */
   #projects .project-item {
     flex-direction: row;
@@ -762,9 +794,5 @@ contact .contact {
   }
   /* End header */
 
-  #services .service-bottom .service-item {
-    flex-basis: 22%;
-    margin: 1.5%;
-  }
 }
 /* End  Media Query For Desktop */

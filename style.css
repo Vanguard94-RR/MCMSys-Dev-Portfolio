@@ -407,16 +407,15 @@ p {
 }
 /* End Skills Section */
 /* Projects section */
+#projects {
+  background-color: var(--color-dark);
+  border-top: 1px solid var(--color-border);
+}
 #projects .projects {
-  background-image: url(./img/ImgFront-.jpg);
-  background-size: contain;
-  background-position: center;
-  position: relative;
-  z-index: 1;
   flex-direction: column;
-  /*max-width: 1500px;*/
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 120px 0 80px;
+  width: 100%;
 }
 #projects .projects-header h1 {
   margin-bottom: 50px;
@@ -429,90 +428,84 @@ p {
 }
 #projects .project-item {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   flex-direction: column;
   width: 80%;
-  margin: 20px auto;
+  margin: 12px auto;
   overflow: hidden;
-  border-radius: 10px;
-  margin-bottom: 5px;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+  transition: border-color 0.2s ease;
+}
+#projects .project-item:hover {
+  border-color: #444;
 }
 #projects .project-info {
-  padding: 30px;
+  padding: 36px;
   flex-basis: 50%;
-  height: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background-color: var(--color-surface);
   color: white;
-  border-radius: 15px;
+  border-left: 3px solid var(--color-cyan);
 }
 #projects .project-info h1 {
-  font-size: 4rem;
-  font-weight: 500;
+  font-size: 2.6rem;
+  font-weight: 600;
 }
 #projects .project-info h2 {
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-top: 10px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--color-muted);
+  margin-top: 6px;
+  font-family: var(--font-mono);
 }
 #projects .project-info p {
-  color: white;
+  color: #aaa;
+  margin-top: 14px;
 }
 #projects .project-img {
   flex-basis: 50%;
-  height: 300px;
-  width: auto;
+  height: 260px;
   overflow: hidden;
   position: relative;
-  margin-top: 3px;
-  border-radius: 15px;
-}
-#projects .project-img::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  opacity: 0.7;
 }
 #projects .project-img img {
   transition: 0.3s ease transform;
+  filter: brightness(0.4) saturate(0.3);
 }
 #projects .project-item:hover .project-img img {
-  transform: scale(1.5);
+  transform: scale(1.05);
+  filter: brightness(0.5) saturate(0.4);
 }
-/* Project accent card additions */
+/* Project accent card */
 #projects .project-accent-header {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 #projects .project-category {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-family: var(--font-mono);
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.12rem;
   color: var(--color-cyan);
   font-weight: 500;
-  border-top: 2px solid var(--color-cyan);
-  padding-top: 8px;
-  display: inline-block;
 }
 #projects .project-tech-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 12px;
+  margin-top: 16px;
 }
 #projects .project-tech-tag {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-family: var(--font-mono);
   color: var(--color-muted);
-  border: 1px solid #555;
+  border: 1px solid #333;
   padding: 3px 10px;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 /* End Projects section */
 

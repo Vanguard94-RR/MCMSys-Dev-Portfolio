@@ -599,104 +599,129 @@ p {
 /*End About Section*/
 /* contact Section */
 #contact {
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background-color: var(--color-dark);
+  border-top: 1px solid var(--color-border);
 }
 #contact .contact {
   flex-direction: column;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   width: 90%;
+  padding: 120px 0 80px;
+}
+#contact .section-title {
+  color: white;
+  margin-bottom: 60px;
 }
 #contact .contact-items {
-  /* max-width: 400px; */
   width: 100%;
 }
 #contact .contact-item {
   width: 80%;
-  text-align: center;
-  border-radius: 10px;
-  padding: 30px;
-  margin: 30px auto;
+  padding: 24px 30px;
+  margin: 12px auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-  box-shadow: 0px 0px 18px 0 rgba(0,0,0,0.5);
-  transition: 0.3s ease box-shadow;
+  gap: 20px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-cyan);
+  border-radius: 4px;
+  transition: border-color 0.2s ease;
 }
 #contact .contact-item:hover {
-  box-shadow: 0px 0px 5px 0 black;
+  border-color: var(--color-cyan);
 }
 #contact .icon {
-  width: 70px;
-  margin: 0 auto;
-  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+}
+#contact .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 #contact .contact-info h1 {
-  font-size: 3.5rem;
+  font-size: 1.4rem;
+  font-family: var(--font-mono);
   font-weight: 500;
-  margin-bottom: 15px;
-  color: white;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 4px;
 }
 #contact .contact-info h2 {
-  font-size: 2.5rem;
-  line-height: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  color: var(--color-muted);
+  color: white;
+  line-height: 1.4;
 }
 #contact .contact-info h2 a {
   color: inherit;
+  transition: color 0.2s ease;
 }
-#contact .section-title {
-  color: white;
+#contact .contact-info h2 a:hover {
+  color: var(--color-cyan);
 }
 /*End contact Section */
 /*Footer Section*/
 #footer {
-  background-image: linear-gradient(90deg, black 0%, gray 95%);
+  background-color: #000;
+  border-top: 1px solid var(--color-border);
 }
-
 #footer .footer {
-  min-height: 250px;
+  min-height: 200px;
   flex-direction: column;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding: 40px 20px;
 }
-
-#footer h2 {
+#footer .brand h1 {
+  font-family: var(--font-mono);
+  font-size: 2rem;
   color: white;
-  font-weight: 500;
-  font-size: 1.8rem;
-  letter-spacing: 0.1rem;
-  padding-top: 5px;
-  flex-direction: column;
+}
+#footer .brand h1 span {
+  color: var(--color-cyan);
+  font-size: 2rem;
+}
+#footer h2 {
+  color: #666;
+  font-weight: 400;
+  font-size: 1.4rem;
+  font-family: var(--font-mono);
+  letter-spacing: 0.05rem;
+  padding-top: 8px;
+}
+#footer h2 span {
+  color: var(--color-cyan);
 }
 #footer .social-icon {
   display: flex;
-  margin-top: 15px;
+  margin-top: 20px;
   margin-bottom: 10px;
+  gap: 10px;
 }
 #footer .social-item {
-  height: 50px;
-  width: 50px;
-  margin: 0 5px;
+  height: 40px;
+  width: 40px;
 }
 #footer .social-item img {
-  filter: grayscale(1);
+  filter: grayscale(1) brightness(0.6);
   transition: 0.3s ease filter;
 }
-
 #footer .social-item:hover img {
-  filter: grayscale(0);
+  filter: grayscale(0) brightness(1);
 }
 #footer p {
-  margin-top: 5px;
-  color: white;
+  margin-top: 10px;
+  color: #444;
   text-align: center;
   font-size: 1rem;
+  font-family: var(--font-mono);
 }
+/*End Footer Section*/
 /*Key Frames */
 /*Reveal box*/
 

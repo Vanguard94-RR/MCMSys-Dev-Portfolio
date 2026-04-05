@@ -590,7 +590,7 @@ p {
 }
 /*End About Section*/
 /* contact Section */
-contact .contact {
+#contact .contact {
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
@@ -633,6 +633,9 @@ contact .contact {
   line-height: 2rem;
   font-weight: bold;
   /*font-weight: 500;*/
+}
+#contact .contact-info h2 a {
+  color: inherit;
 }
 /*End contact Section */
 /*Footer Section*/

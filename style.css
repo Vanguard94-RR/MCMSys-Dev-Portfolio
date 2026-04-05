@@ -1,11 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=JetBrains+Mono:wght@400;500;700&display=swap");
 
 :root {
-  --color-cyan: #64ffda;
+  --color-cyan:   #64ffda;
   --color-orange: #f0a500;
-  --color-red: crimson;
-  --color-muted: #aaa;
-  --color-dark: #29323c;
+  --color-red:    #e94560;
+  --color-muted:  #888;
+  --color-dark:   #0a0a0a;
+  --color-surface: #111;
+  --color-border:  #2a2a2a;
+  --font-mono: "JetBrains Mono", "Fira Code", "Consolas", monospace;
 }
 
 * {
@@ -17,6 +20,8 @@ html {
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+  background-color: var(--color-dark);
+  color: #ccc;
 }
 a {
   grid-template-columns: auto;
@@ -36,7 +41,7 @@ img {
   object-fit: cover;
 }
 p {
-  color: black;
+  color: #aaa;
   font-size: 1.4rem;
   margin-top: 5px;
   line-height: 2.5rem;
@@ -45,15 +50,16 @@ p {
 }
 .section-title {
   font-size: 4rem;
-  font-weight: 450;
-  color: black;
+  font-weight: 700;
+  color: white;
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   text-align: center;
+  font-family: var(--font-mono);
 }
 .section-title span {
-  color: crimson;
+  color: var(--color-cyan);
 }
 .section-title2 span {
   color: crimson;
@@ -75,29 +81,31 @@ p {
 .cta {
   display: inline-block;
   padding: 10px 30px;
-  color: white;
+  color: var(--color-cyan);
   background-color: transparent;
-  border: 2px solid crimson;
-  font-size: 2rem;
+  border: 1px solid var(--color-cyan);
+  font-size: 1.4rem;
+  font-family: var(--font-mono);
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   margin-top: 30px;
-  transition: 0.3s ease background-color;
+  transition: 0.3s ease;
   transition-property: background-color, color;
 }
 .cta:hover {
-  color: white;
-  background-color: crimson;
+  color: var(--color-dark);
+  background-color: var(--color-cyan);
 }
 .brand h1 {
   font-size: 3rem;
   text-transform: uppercase;
   color: white;
+  font-family: var(--font-mono);
 }
 .brand h1 span {
   font-size: 3rem;
   text-transform: uppercase;
-  color: crimson;
+  color: var(--color-cyan);
 }
 
 /* Header section */

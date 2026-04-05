@@ -271,10 +271,6 @@ p {
   animation: text_reveal_name 0.5s ease forwards;
   animation-delay: 3s;
 }
-#hero h1:nth-child(4) {
-  animation: text_reveal_name2 0.5s ease forwards;
-  animation-delay: 4s;
-}
 #hero h1 span {
   position: absolute;
   top: 0;
@@ -293,9 +289,6 @@ p {
 }
 #hero h1:nth-child(3) span {
   animation-delay: 2.5s;
-}
-#hero h1:nth-child(4) span {
-  animation-delay: 3.5s;
 }
 
 /*End  Hero Section*/

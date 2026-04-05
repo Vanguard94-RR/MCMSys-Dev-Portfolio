@@ -62,7 +62,7 @@ p {
   color: var(--color-cyan);
 }
 .section-title2 span {
-  color: crimson;
+  color: var(--color-red);
 }
 
 .section-title span2 {
@@ -89,8 +89,7 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   margin-top: 30px;
-  transition: 0.3s ease;
-  transition-property: background-color, color;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .cta:hover {
   color: var(--color-dark);
